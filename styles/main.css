@@ -220,3 +220,7 @@ filter: grayscale(70%);
 .card-text {
   font-size: 4em;
 }
+
+#small-hero {
+  font-size: 2em;
+}
