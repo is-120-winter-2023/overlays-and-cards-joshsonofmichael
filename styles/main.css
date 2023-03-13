@@ -1,0 +1,222 @@
+/*****************************************************/
+/* This semester we will be using my variation of    */
+/* Josh Comeau's CSS Reset instead of normalize      */
+/* Read more at                                      */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+/*****************************************************/
+/* Always add your CSS below the reset CSS           */
+/*****************************************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  /* this an experimental line-height; if it breaks, add line-height: 1.5 to body */
+  line-height: calc(1em + 0.5rem);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* until you get a feel for overflow, I'll keep these next two commented out */
+/* p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+} */
+
+/* p {
+  overflow-wrap: break-word;
+  hyphens: auto;
+} */
+
+/* temp CSS for HTML only assignments */
+picture img {
+  width: 100%;
+}
+
+svg {
+  width: 200px;
+}
+
+/* temp fix to size about img */
+img[srcset] {
+  width: 50%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+/* temporary fix to size svg images */
+img[src$="svg"] {
+  width: 200px;
+}
+
+/************ add your CSS here *****************/
+/************ add your CSS here *****************/
+/************ add your CSS here *****************/
+/************ add your CSS here *****************/
+/************ add your CSS here *****************/
+
+
+
+
+
+
+:root {
+  --color-background: #212121;
+  --steel-gray: #595959;
+  --dark: #1c2222;
+  --light: #eeeeee;
+  --mint: #93c47d;
+  --gray: #7d8280;
+  --success: #5ba25e;
+  --warning: #d89126;
+  --danger: #f44336;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--steel-gray);
+  font-family: "Lato", sans-serif;
+  color: var(--light);
+  box-sizing: border-box;
+}
+p {
+  font-family: "Lato", sans-serif;
+  color: var(--light);
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--light);
+  font-weight: 700;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+
+h1 {
+  font-size: 7rem;
+}
+a {
+  color: var(--mint);
+  text-decoration: none;
+}
+a[href]:hover {
+  color: var(--mint);
+  text-decoration: none;
+  filter: brightness(1.5);
+  transition: 300ms ease;
+}
+a:visited {
+  color: var(--gray);
+}
+.button {
+  display: inline-block;
+}
+.button:hover {
+  filter: brightness(1.5);
+  transition: 300ms ease;
+  cursor: pointer;
+}
+
+header {
+  background-color: var(--color-background);
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: auto;
+}
+p {
+  margin-bottom: 1.5rem;
+}
+article,
+aside {
+  margin-bottom: 6rem;
+}
+footer {
+  padding: 5rem;
+  background-color: var(--color-background);
+}
+.hero h1{
+  font-size: clamp(3.5rem, 10vw + 1rem, 10rem);
+}
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.cards {
+height: auto;
+display: flex;
+}
+
+.card {
+display: inline-block;
+height: auto;
+width: auto;
+flex: 1 1 0;
+filter: grayscale(70%);
+}
+
+.card[href]:hover {
+  filter: brightness(0);
+  filter: grayscale(20%);
+  transition: box-shadow 300ms ease;
+  
+}
+.card-text {
+  font-size: 4em;
+}
